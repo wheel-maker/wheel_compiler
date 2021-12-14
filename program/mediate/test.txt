@@ -1,0 +1,5 @@
+int program(int a,int b,int c)
+{
+	int i;
+	return i;
+}

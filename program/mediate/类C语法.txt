@@ -1,0 +1,18 @@
+<program>=><TYPE><ID> ( ) <block>
+<block>=>{<declare><sentences>}
+<declare>=><variable><declare> | 
+<variable>=><TYPE> <ID>;
+<sentences>=><sentence><sentences> | 
+<sentence>=><ifSentence> | <whileSentence> | <returnSentence> | <assignSentence>
+<assignSentence>=><ID>=<expression>
+<returnSentence>=>return; | return <expression>;
+<whileSentence>=>while(<expression>)<block>
+<ifSentence>=><IF>(<expression>)<block><elseSentence>
+<elseSentence>=><ELSE><block> | 
+<expression>=><addExpression><addExpressoins>
+<addExpressions>=><RELOP><addExpression><addExpressions> | 
+<addExpression>=><term><terms>
+<terms>=>+<term><terms>  | -<term><terms> | 
+<term>=><factor><factors>
+<factors>=>*<factor><factors> | /<factor><factors> | 
+<factor>=><ID> | NUM | (<expression>)
